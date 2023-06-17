@@ -1,8 +1,32 @@
-<h1>Introduction</h1>
-<p>I'm a Software Engineering student at Centennial College, Canada.</p>
-<p>My passion is building state-of-the-art Web Applications.</p>
-<p>My stack: Angular, TypeScript, Javascript, NodeJS, MongoDB, SQL.</p>
-<p>Add some effects here.</p>
-<p>Web Developer (MEAN)</p>
-<p>Front-end Developer</p>
-<p>Java Developer</p>
+<div class="container">
+  <h1>Hi, I'm Hoang Long Le!</h1>
+  <p>I'm a Software Engineering student and a Web Developer.</p>
+  <p>
+    My passion is building Web Applications with modern tools and frameworks.
+  </p>
+  <p>
+    Some of my tech stack: Angular, Java, SQL, Bootstrap, HTML, Typescript,
+    Javascript.
+  </p>
+  <div class="row">
+    <div class="col-1">
+      <a href="https://www.linkedin.com/in/hoanglongle/">Linkedin</a><br />
+    </div>
+    <div class="col-1">
+      <a href="https://github.com/longlee10">Github</a><br />
+    </div>
+    <div class="col-3">
+      <button class="btn btn-warning">Download my Resume!</button>
+    </div>
+  </div>
+
+  <br />
+  <div class="row">
+    <div *ngFor="let src of imgSrc" class="col">
+      <div class="card" style="width: 15rem">
+        <img class="card-img-top" [src]="src" alt="Card image cap" />
+      </div>
+      <br />
+    </div>
+  </div>
+</div>

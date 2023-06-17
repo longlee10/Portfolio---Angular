@@ -3,11 +3,12 @@
 
 .container{
     padding: 20px;
+    margin-top: 20px;
 } 
 
 body{
     background-color: black;
     color: white;
-    font-size: 22px;
-    font-family: garamond;
+    font-size: 18px;
+    font-family: garamond
 }

@@ -1,36 +1,45 @@
-<form action="">
-  <div class="form-group">
-    <label for="name">Your name</label>
-    <input
-      type="text"
-      class="form-control"
-      id="name"
-      name="name"
-      placeholder="What's your name?"
-    />
+<div class="container">
+  <h1>Let's get in touch!</h1>
+  <div class="form_container">
+    <form action="">
+      <div class="form-group">
+        <label for="name">Your name</label>
+        <input
+          type="text"
+          class="form-control"
+          id="name"
+          name="name"
+          placeholder="What's your name?"
+        />
+      </div>
+      <br />
+      <div class="form-group">
+        <label for="email">Your email</label>
+        <input
+          type="text"
+          class="form-control"
+          id="email"
+          name="email"
+          placeholder="What's your email?"
+        />
+      </div>
+      <br />
+      <div class="form-group">
+        <label for="message">Your message</label>
+        <textarea
+          name="message"
+          id="message"
+          class="form-control"
+          placeholder="What's your message?"
+        ></textarea>
+      </div>
+      <br />
+      <div class="row">
+        <div class="col-8"><button class="btn btn-primary">Send</button></div>
+        <div class="col-4">
+          <button class="btn btn-warning">Get my resume!</button>
+        </div>
+      </div>
+    </form>
   </div>
-  <br />
-  <div class="form-group">
-    <label for="email">Your email</label>
-    <input
-      type="text"
-      class="form-control"
-      id="email"
-      name="email"
-      placeholder="What's your email?"
-    />
-  </div>
-  <br />
-  <div class="form-group">
-    <label for="message">Your message</label>
-    <textarea
-      name="message"
-      id="message"
-      class="form-control"
-      placeholder="What's your message?"
-    ></textarea>
-  </div>
-  <br />
-  <button class="btn btn-primary">Send</button>
-  <button class="btn btn-warning">Get my resume!</button>
-</form>
+</div>

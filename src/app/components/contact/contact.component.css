@@ -1,3 +1,10 @@
 form{ 
     width: 400px;
+    margin: auto
 }
+
+.form_container{
+    width: 450px;
+    background-color: #1A233A;
+}
+

@@ -6,7 +6,6 @@ import { NavbarComponent } from './components/navbar/navbar.component';
 import { ProjectsComponent } from './components/projects/projects.component';
 import { ContactComponent } from './components/contact/contact.component';
 import { RouterModule } from '@angular/router';
-import { AboutComponent } from './components/about/about.component';
 import { OverviewComponent } from './components/overview/overview.component';
 
 @NgModule({
@@ -15,14 +14,12 @@ import { OverviewComponent } from './components/overview/overview.component';
     NavbarComponent,
     ProjectsComponent,
     ContactComponent,
-    AboutComponent,
     OverviewComponent,
   ],
   imports: [
     BrowserModule,
     RouterModule.forRoot([
-      { path: '', component: AboutComponent },
-      { path: 'intro', component: OverviewComponent },
+      { path: '', component: OverviewComponent },
       { path: 'work', component: ProjectsComponent },
       { path: 'contact', component: ContactComponent },
     ]),

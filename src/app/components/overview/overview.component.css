@@ -1,0 +1,15 @@
+.card-body{
+    text-align: center;
+}
+
+img{
+    height: 100px;
+    width: 100px;
+    margin: auto;
+    margin-top: 50px;
+}
+
+.card{
+    background: #e8eaea;
+    height: 200px;
+}
