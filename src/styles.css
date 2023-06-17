@@ -1,6 +1,13 @@
 /* You can add global styles to this file, and also import other style files */
 @import "~bootstrap/dist/css/bootstrap.css";
 
+.container{
+    padding: 20px;
+} 
+
 body{
-    padding: 5px;
+    background-color: black;
+    color: white;
+    font-size: 22px;
+    font-family: garamond;
 }

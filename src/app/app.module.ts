@@ -5,18 +5,29 @@ import { AppComponent } from './app.component';
 import { NavbarComponent } from './components/navbar/navbar.component';
 import { ProjectsComponent } from './components/projects/projects.component';
 import { ContactComponent } from './components/contact/contact.component';
+import { RouterModule } from '@angular/router';
+import { AboutComponent } from './components/about/about.component';
+import { OverviewComponent } from './components/overview/overview.component';
 
 @NgModule({
   declarations: [
     AppComponent,
     NavbarComponent,
     ProjectsComponent,
-    ContactComponent
+    ContactComponent,
+    AboutComponent,
+    OverviewComponent,
   ],
   imports: [
-    BrowserModule
+    BrowserModule,
+    RouterModule.forRoot([
+      { path: '', component: AboutComponent },
+      { path: 'intro', component: OverviewComponent },
+      { path: 'work', component: ProjectsComponent },
+      { path: 'contact', component: ContactComponent },
+    ]),
   ],
   providers: [],
-  bootstrap: [AppComponent]
+  bootstrap: [AppComponent],
 })
-export class AppModule { }
+export class AppModule {}
