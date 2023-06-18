@@ -7,6 +7,7 @@ import { ProjectsComponent } from './components/projects/projects.component';
 import { ContactComponent } from './components/contact/contact.component';
 import { RouterModule } from '@angular/router';
 import { OverviewComponent } from './components/overview/overview.component';
+import { ExperienceComponent } from './components/experience/experience.component';
 
 @NgModule({
   declarations: [
@@ -15,12 +16,14 @@ import { OverviewComponent } from './components/overview/overview.component';
     ProjectsComponent,
     ContactComponent,
     OverviewComponent,
+    ExperienceComponent,
   ],
   imports: [
     BrowserModule,
     RouterModule.forRoot([
       { path: '', component: OverviewComponent },
-      { path: 'work', component: ProjectsComponent },
+      { path: 'projects', component: ProjectsComponent },
+      { path: 'experience', component: ExperienceComponent },
       { path: 'contact', component: ContactComponent },
     ]),
   ],

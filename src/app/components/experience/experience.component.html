@@ -1,0 +1,15 @@
+<div class="container">
+  <h1>My Professional Experience.</h1>
+  <div class="timeline">
+    <div *ngFor="let e of experience" class="timeline-row">
+      <div class="timeline-time">{{ e.time }}</div>
+      <div class="timeline-content">
+        <h2>{{ e.name }}</h2>
+        <p>{{ e.place }}</p>
+        <li *ngFor="let d of e.desc">
+          {{ d }}
+        </li>
+      </div>
+    </div>
+  </div>
+</div>
