@@ -1,9 +1,23 @@
 .card {
-    width: 30rem;
-    background-color: rgb(237, 235, 235);
+    width: 20rem;
+    background-color: #1a233a;
+    color: white;
 }
 
 .card-title{
     font-weight: bold;
-    font-size: 20px;
+    font-size: 25px;
+}
+
+.hashtag{
+    color: orange;
+    font-size: 15px;
+}
+
+img{
+    height: 180px;
+}
+
+a{
+    text-decoration: none;
 }

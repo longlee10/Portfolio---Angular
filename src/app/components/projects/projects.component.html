@@ -1,19 +1,22 @@
 <div class="container">
   <h1>My Projects.</h1>
   <p>
-    I have built multiple web applications using Angular, Bootstrap CSS,
-    TypeScript and Javascript. You can find the source code on my
-    <a style="color: orange" href="">Github</a>. All projects are hosted on the
-    cloud (Firebase or Heroku).
+    {{ intro }}
   </p>
   <div class="row">
     <div *ngFor="let c of card" class="col">
       <div class="card">
         <img class="card-img-top" [src]="c.imgSrc" alt="Card image cap" />
         <div class="card-body">
-          <h5 class="card-title">{{ c.name }}</h5>
+          <h5 class="card-title">
+            <a [href]="c.href">{{ c.name }} </a>
+          </h5>
           <p class="card-text">{{ c.description }}</p>
-          <a [href]="c.href" class="btn btn-primary">Go to project</a>
+          <div class="row">
+            <div *ngFor="let t of c.tech" class="col">
+              <p class="hashtag">#{{ t }}</p>
+            </div>
+          </div>
         </div>
       </div>
     </div>
