@@ -9,8 +9,11 @@
         <img class="card-img-top" [src]="c.imgSrc" alt="Card image cap" />
         <div class="card-body">
           <h5 class="card-title">
-            <a [href]="c.href">{{ c.name }} </a>
+            <a [name]="c.name" #event (click)="openPage(event)"
+              >{{ c.title }}
+            </a>
           </h5>
+          <!-- [href]="c.href" -->
           <p class="card-text">{{ c.description }}</p>
           <div class="row">
             <div *ngFor="let t of c.tech" class="col">

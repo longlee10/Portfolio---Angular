@@ -2,13 +2,12 @@
 @import "~bootstrap/dist/css/bootstrap.css";
 
 .container{
-    padding: 20px;
-    margin-top: 20px;
+    padding: 50px;
 } 
 
 body{
     background-color: black;
     color: white;
-    font-size: 18px;
+    font-size: 22px;
     font-family: garamond
 }

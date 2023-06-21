@@ -28,3 +28,5 @@ h1{
     background-color: rgb(255 128 0 );
     color: white;
 }
+
+a :hover{cursor: pointer;}

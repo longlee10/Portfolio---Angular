@@ -1,10 +1,15 @@
 <nav class="navbar navbar-expand-lg navbar-dark bg-dark fixed-top">
   <div class="collapse navbar-collapse">
-    <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+    <!-- <a href="" class="navbar-brand"
+      ><img src="/assets/img/brand.png" alt="" class="brand"
+    /></a> -->
+    <ul class="navbar-nav mr-auto">
       <!-- Align left -->
 
       <li class="nav-item">
-        <a routerLink="" class="nav-link">Hoang Long Le</a>
+        <a routerLink="" class="nav-link" [class.active]="isActive"
+          >Hoang Long Le</a
+        >
       </li>
 
       <li class="nav-item">
@@ -12,7 +17,7 @@
       </li>
 
       <li class="nav-item">
-        <a class="nav-link" routerLink="/projects">Projects</a>
+        <a class="nav-link" routerLink="/projects" name="project" >Projects</a>
       </li>
 
       <li class="nav-item">
