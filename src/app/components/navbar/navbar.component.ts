@@ -12,15 +12,15 @@ export class NavbarComponent {
 
   constructor(private router: Router) {}
 
-  async ngOnInit() {
-    this.router.events
-      .pipe(
-        map((event) => {
-          return event instanceof NavigationEnd ? event : null;
-        })
-      )
-      .subscribe((e) => console.log(e?.url));
-  }
+  // async ngOnInit() {
+  //   this.router.events
+  //     .pipe(
+  //       map((event) => {
+  //         return event instanceof NavigationEnd ? event : null;
+  //       })
+  //     )
+  //     .subscribe((e) => console.log(e?.url));
+  // }
 
-  send() {}
+  // send() {}
 }

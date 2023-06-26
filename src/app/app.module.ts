@@ -12,6 +12,8 @@ import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
 import { MatInputModule } from '@angular/material/input';
 import { MatButtonModule } from '@angular/material/button';
 import { FormsModule } from '@angular/forms';
+import { HttpClientModule } from '@angular/common/http';
+import { SkillsComponent } from './components/skills/skills.component';
 
 @NgModule({
   declarations: [
@@ -21,12 +23,14 @@ import { FormsModule } from '@angular/forms';
     ContactComponent,
     OverviewComponent,
     ExperienceComponent,
+    SkillsComponent,
   ],
   imports: [
     BrowserModule,
     RouterModule.forRoot([
       { path: '', component: OverviewComponent },
       { path: 'projects', component: ProjectsComponent },
+      { path: 'skills', component: SkillsComponent },
       { path: 'experience', component: ExperienceComponent },
       { path: 'contact', component: ContactComponent },
     ]),
@@ -34,6 +38,7 @@ import { FormsModule } from '@angular/forms';
     MatInputModule,
     MatButtonModule,
     FormsModule,
+    HttpClientModule,
   ],
   providers: [],
   bootstrap: [AppComponent],
