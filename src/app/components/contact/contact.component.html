@@ -1,4 +1,4 @@
-<div class="container">
+<!-- <div class="container">
   <h1>Let's get in touch!</h1>
   <div class="form_container">
     <form action="">
@@ -42,4 +42,52 @@
       </div>
     </form>
   </div>
+</div> -->
+
+<div class="container">
+  <form>
+    <h1>Let's get in touch!</h1>
+    <mat-form-field>
+      <mat-label>Your name</mat-label>
+      <input
+        type="text"
+        matInput
+        placeholder="What is your name?"
+        name="name"
+        #name="ngModel"
+        ngModel
+        required
+      />
+      <mat-hint>Please enter your name.</mat-hint>
+      <mat-error *ngIf="name.touched">Name is required.</mat-error>
+    </mat-form-field>
+
+    <br />
+    <mat-form-field>
+      <mat-label>Your email</mat-label>
+      <input
+        type="text"
+        name="email"
+        ngModel
+        #email="ngModel"
+        matInput
+        required
+        placeholder="What is your email?"
+      />
+      <span matTextSuffix="">@gmail.com</span>
+      <mat-hint>Please enter your email.</mat-hint>
+      <mat-error *ngIf="email.touched">Email is required.</mat-error>
+    </mat-form-field>
+    <br />
+    <mat-form-field>
+      <mat-label>Your message</mat-label>
+      <textarea
+        matInput
+        placeholder="What is your message?"
+        cdkTextareaAutosize
+      ></textarea>
+      <mat-hint>Leave me a message!</mat-hint> </mat-form-field
+    ><br />
+    <button mat-raised-button color="primary">Contact me!</button>
+  </form>
 </div>

@@ -1,12 +1,15 @@
 .navbar{
-    font-size: 35px;
-    text-align: right;
-    
+    font-size: 18px;
 }
 
 .brand {
     height: 50px;
     width: 50px;
+}
+
+.collapse{
+    padding-left: 50px;
+    padding-right: 50px;
 }
 
 .active{

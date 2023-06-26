@@ -40,6 +40,7 @@ export class ProjectsComponent {
     research: 'https://aurora-research-company.herokuapp.com/landing',
     bug: 'http://studentweb.cencol.ca/hle81/BugSmasher/BugSmasher.html',
   };
+  
   openPage(event) {
     window.open(this.link[event.name]);
   }

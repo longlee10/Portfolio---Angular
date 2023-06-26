@@ -8,6 +8,10 @@ import { ContactComponent } from './components/contact/contact.component';
 import { RouterModule } from '@angular/router';
 import { OverviewComponent } from './components/overview/overview.component';
 import { ExperienceComponent } from './components/experience/experience.component';
+import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
+import { MatInputModule } from '@angular/material/input';
+import { MatButtonModule } from '@angular/material/button';
+import { FormsModule } from '@angular/forms';
 
 @NgModule({
   declarations: [
@@ -26,6 +30,10 @@ import { ExperienceComponent } from './components/experience/experience.componen
       { path: 'experience', component: ExperienceComponent },
       { path: 'contact', component: ContactComponent },
     ]),
+    BrowserAnimationsModule,
+    MatInputModule,
+    MatButtonModule,
+    FormsModule,
   ],
   providers: [],
   bootstrap: [AppComponent],
