@@ -1,39 +1,27 @@
 <div class="container">
-  <h1>Hi, I'm Hoang Long Le!</h1>
-  <p>I'm a Software Engineering student and a Web Developer.</p>
-  <p>
-    My passion is building Web Applications with modern tools and frameworks.
-  </p>
-  <p>
-    Some of my tech stack: Angular, Java, SQL, Bootstrap, HTML, Typescript,
-    Javascript.
-  </p>
-  <div class="row">
-    <div class="col-1">
-      <a (click)="openPage(linkedin)" #linkedin name="linkedin">
-        <img
-          class="social-media"
-          src="https://cdn2.iconfinder.com/data/icons/popular-social-media-flat/48/Popular_Social_Media-22-512.png"
-          alt=""
-      /></a>
-    </div>
-    <div class="col-1">
-      <a (click)="openPage(github)" #github name="github"
-        ><img
-          class="social-media"
-          src="https://i.pinimg.com/736x/b5/1b/78/b51b78ecc9e5711274931774e433b5e6.jpg"
-          alt=""
-      /></a>
-    </div>
-    <div class="col-5">
-      <button class="btn">Download my Resume!</button>
-    </div>
-  </div>
-
+  <h1>Hi!</h1>
   <br />
+  <h1>I'm Hoang Long Le.</h1>
+  <br />
+  <h2>I am a Web Developer.</h2>
+
+  <a (click)="openPage(linkedin)" #linkedin name="linkedin">
+    <i class="fa fa-linkedin-square"></i>
+  </a>
+
+  <a (click)="openPage(github)" #github name="github">
+    <i class="fa fa-github"></i
+  ></a>
+
+  <a href="mailto: longquan98@gmail.com"><i class="fa fa-envelope"></i></a
+  ><br />
+  <br />
+  <button mat-raised-button color="primary">Download my Resume!</button>
+  <br /><br />
+
   <div class="row">
     <div *ngFor="let src of imgSrc" class="col">
-      <div class="card" style="width: 15rem">
+      <div class="card" style="width: 10rem; height: 10rem">
         <img class="card-img-top" [src]="src" alt="Card image cap" />
       </div>
       <br />

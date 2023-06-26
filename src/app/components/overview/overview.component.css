@@ -3,25 +3,20 @@
 }
 
 img{
-    height: 100px;
-    width: 100px;
+    height: 65px;
+    width: 65px;
     margin: auto;
-    margin-top: 50px;
+    /* margin-top: 50px; */
 }
 
 .card{
-    background: #e8eaea;
-    height: 200px;
+    background: black;
+    /* height: 200px; */
 }
 
 h1{
     font-size: 70px;
-    color: rgb(255 128 0 );
-}
-
-.social-media{
-    width: 50px;
-    height: 50px;
+    /* color: rgb(255 128 0 ); */
 }
 
 .btn{
@@ -30,3 +25,14 @@ h1{
 }
 
 a :hover{cursor: pointer;}
+
+.fa{
+    font-size: 40px; 
+    color: black ;
+    display: inline-block;
+    margin-right: 20px;
+}
+
+/* .fa-linkedin-square{
+   
+} */
