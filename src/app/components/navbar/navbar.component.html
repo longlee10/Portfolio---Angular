@@ -5,24 +5,37 @@
     /></a> -->
     <ul class="navbar-nav me-auto">
       <li class="nav-item">
-        <a routerLink="" class="nav-link" [class.active]="isActive"
-          >Hoang Long Le</a
-        >
+        <a routerLink="" class="nav-link">Hoang Long Le</a>
       </li>
     </ul>
 
     <ul class="navbar-nav">
       <li class="nav-item">
-        <a routerLink="/skills" class="nav-link">Skills</a>
+        <a routerLink="/skills" class="nav-link" routerLinkActive="active-link"
+          >Skills</a
+        >
       </li>
       <li class="nav-item">
-        <a routerLink="/experience" class="nav-link">Experience</a>
+        <a
+          routerLink="/experience"
+          class="nav-link"
+          routerLinkActive="active-link"
+          >Experience</a
+        >
       </li>
       <li class="nav-item">
-        <a class="nav-link" routerLink="/projects" name="project">Work</a>
+        <a
+          class="nav-link"
+          routerLink="/projects"
+          name="project"
+          routerLinkActive="active-link"
+          >Work</a
+        >
       </li>
       <li class="nav-item">
-        <a routerLink="/contact" class="nav-link">Contact</a>
+        <a routerLink="/contact" class="nav-link" routerLinkActive="active-link"
+          >Contact</a
+        >
       </li>
     </ul>
   </div>

@@ -7,20 +7,4 @@ import { map } from 'rxjs';
   templateUrl: './navbar.component.html',
   styleUrls: ['./navbar.component.css'],
 })
-export class NavbarComponent {
-  isActive: boolean;
-
-  constructor(private router: Router) {}
-
-  // async ngOnInit() {
-  //   this.router.events
-  //     .pipe(
-  //       map((event) => {
-  //         return event instanceof NavigationEnd ? event : null;
-  //       })
-  //     )
-  //     .subscribe((e) => console.log(e?.url));
-  // }
-
-  // send() {}
-}
+export class NavbarComponent {}
