@@ -11,6 +11,7 @@ export class SkillsComponent {
   private url: string = '/assets/json/skills.json';
 
   constructor(private http: HttpClient) {}
+
   ngOnInit() {
     this.http.get(this.url).subscribe((json) => {
       this.imgSrc = json['imgSrc'];

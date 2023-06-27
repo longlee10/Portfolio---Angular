@@ -1,14 +1,20 @@
 <div class="container">
   <h1>My Professional Experience.</h1>
   <div class="timeline">
-    <div *ngFor="let e of experience" class="timeline-row">
-      <div class="timeline-time">{{ e.time }}</div>
-      <div class="timeline-content">
-        <h2>{{ e.name }}</h2>
-        <p>{{ e.place }}</p>
-        <li *ngFor="let d of e.desc">
-          {{ d }}
-        </li>
+    <div
+      *ngFor="let e of experience"
+      class="timeline-container"
+      [class.right-container]="!e['alignLeft']"
+    >
+      <div class="circle"></div>
+      <div class="text-box">
+        <h2>{{ e["place"] }}</h2>
+        <p>{{ e["name"] }}</p>
+        <small>{{ e["time"] }}</small>
+        <span
+          [class.arrow-left]="e['alignLeft']"
+          [class.arrow-right]="!e['alignLeft']"
+        ></span>
       </div>
     </div>
   </div>

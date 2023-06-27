@@ -2,12 +2,18 @@
 @import "~bootstrap/dist/css/bootstrap.css";
 @import "https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css";
 
-.container{
-    padding-top: 50px;
-} 
-
-body{
-    font-size: 22px;
-    font-family: garamond
+.container {
+  padding-top: 50px;
 }
 
+body {
+  font-size: 22px;
+  font-family: Poppins, sans-serif;
+  /* background: rgb(235, 234, 234); */
+  background-image: url("/assets/img/background.jpg");
+  background-size: cover;
+}
+
+.container h1 {
+  font-weight: bold;
+}
