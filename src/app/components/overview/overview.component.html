@@ -1,10 +1,19 @@
 <div class="container">
-  <h1>Hi!</h1>
-  <br />
-  <h1>I'm Hoang Long Le.</h1>
-  <br />
-  <h2>I am a Web Developer.</h2>
-
+  <div class="greet">
+    <h1>Hi!</h1>
+    <br /><br />
+    <h1>I'm Hoang Long Le.</h1>
+    <br />
+    <h2>I am a Web Developer.</h2>
+  </div>
+  <button mat-raised-button color="primary">
+    <a
+      href="assets/downloadable/Resume - Hoang Long Le.pdf"
+      download="Resume - Hoang Long Le.pdf"
+      >Download my Resume!</a
+    >
+  </button>
+  <br /><br />
   <a (click)="openPage(linkedin)" #linkedin name="linkedin">
     <i class="fa fa-linkedin-square"></i>
   </a>
@@ -13,18 +22,5 @@
     <i class="fa fa-github"></i
   ></a>
 
-  <a href="mailto: longquan98@gmail.com"><i class="fa fa-envelope"></i></a
-  ><br />
-  <br />
-  <button mat-raised-button color="primary">Download my Resume!</button>
-  <br /><br />
-
-  <div class="row">
-    <div *ngFor="let src of imgSrc" class="col">
-      <div class="card" style="width: 10rem; height: 10rem">
-        <img class="card-img-top" [src]="src" alt="Card image cap" />
-      </div>
-      <br />
-    </div>
-  </div>
+  <a href="mailto: longquan98@gmail.com"><i class="fa fa-envelope"></i></a>
 </div>

@@ -1,1 +1,12 @@
-<p>skills works!</p>
+<div class="container">
+  <h1>My skills.</h1>
+  <br />
+  <div class="row">
+    <div *ngFor="let src of imgSrc" class="col">
+      <div class="card" style="width: 10rem; height: 10rem">
+        <img class="card-img-top" [src]="src" alt="Card image cap" />
+      </div>
+      <br />
+    </div>
+  </div>
+</div>
