@@ -83,6 +83,18 @@
         {
             "src": "assets/img/npm.png",
             "name": "NPM"
+        },
+        {
+            "src": "assets/img/expressjs.png",
+            "name": "ExpressJS"
+        },
+        {
+            "src": "assets/img/sass.png",
+            "name": "Sass"
+        },
+        {
+            "src": "assets/img/angula-material.png",
+            "name": "Angular material"
         }
     ]
 }

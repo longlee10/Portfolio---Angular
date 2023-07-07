@@ -1,25 +1,23 @@
-h1{
-    font-size: 70px;
+h1 {
+  font-size: 70px;
 }
 
-.greet{
-    margin-top: 150px;
+.greet {
+  margin-top: 150px;
 }
 
-a :hover{cursor: pointer;}
-
-a{
-    text-decoration: none;
-    color: white;
+a :hover {
+  cursor: pointer;
 }
 
-.fa{
-    font-size: 30px; 
-    color: black ;
-    display: inline-block;
-    margin-right: 20px;
+a {
+  text-decoration: none;
+  color: white;
 }
 
-/* body{
-    background-image: url("https://st2.depositphotos.com/4107269/8776/i/450/depositphotos_87760258-stock-photo-office-white-desk-top-view.jpg");
-} */
+.fa {
+  font-size: 30px;
+  color: black;
+  display: inline-block;
+  margin-right: 20px;
+}

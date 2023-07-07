@@ -11,7 +11,7 @@ import { ExperienceComponent } from './components/experience/experience.componen
 import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
 import { MatInputModule } from '@angular/material/input';
 import { MatButtonModule } from '@angular/material/button';
-import { FormsModule } from '@angular/forms';
+import { FormsModule, ReactiveFormsModule } from '@angular/forms';
 import { HttpClientModule } from '@angular/common/http';
 import { SkillsComponent } from './components/skills/skills.component';
 
@@ -29,7 +29,7 @@ import { SkillsComponent } from './components/skills/skills.component';
     BrowserModule,
     RouterModule.forRoot([
       { path: '', component: OverviewComponent },
-      { path: 'projects', component: ProjectsComponent },
+      { path: 'work', component: ProjectsComponent },
       { path: 'skills', component: SkillsComponent },
       { path: 'experience', component: ExperienceComponent },
       { path: 'contact', component: ContactComponent },
@@ -38,6 +38,7 @@ import { SkillsComponent } from './components/skills/skills.component';
     MatInputModule,
     MatButtonModule,
     FormsModule,
+    ReactiveFormsModule,
     HttpClientModule,
   ],
   providers: [],

@@ -1,51 +1,5 @@
-<!-- <div class="container">
-  <h1>Let's get in touch!</h1>
-  <div class="form_container">
-    <form action="">
-      <div class="form-group">
-        <label for="name">Your name</label>
-        <input
-          type="text"
-          class="form-control"
-          id="name"
-          name="name"
-          placeholder="What's your name?"
-        />
-      </div>
-      <br />
-      <div class="form-group">
-        <label for="email">Your email</label>
-        <input
-          type="text"
-          class="form-control"
-          id="email"
-          name="email"
-          placeholder="What's your email?"
-        />
-      </div>
-      <br />
-      <div class="form-group">
-        <label for="message">Your message</label>
-        <textarea
-          name="message"
-          id="message"
-          class="form-control"
-          placeholder="What's your message?"
-        ></textarea>
-      </div>
-      <br />
-      <div class="row">
-        <div class="col-8"><button class="btn btn-primary">Send</button></div>
-        <div class="col-4">
-          <button class="btn btn-warning">Get my resume!</button>
-        </div>
-      </div>
-    </form>
-  </div>
-</div> -->
-
 <div class="container">
-  <form>
+  <form [formGroup]="form" (ngSubmit)="submit(form)">
     <h1>Let's get in touch!</h1>
     <mat-form-field>
       <mat-label>Your name</mat-label>
@@ -53,13 +7,18 @@
         type="text"
         matInput
         placeholder="What is your name?"
-        name="name"
-        #name="ngModel"
-        ngModel
-        required
+        formControlName="name"
       />
-      <mat-hint>Please enter your name.</mat-hint>
-      <mat-error *ngIf="name.touched">Name is required.</mat-error>
+      <mat-hint *ngIf="!name()?.touched">Please enter your name.</mat-hint>
+
+      <mat-error
+        *ngIf="name()?.errors?.['containSpecialChar'] 
+      "
+        >Name can contain only letters.</mat-error
+      >
+      <!-- <mat-error *ngIf="name()?.errors?.['emptyString']"
+        >Name is required.</mat-error
+      > -->
     </mat-form-field>
 
     <br />
@@ -67,16 +26,16 @@
       <mat-label>Your email</mat-label>
       <input
         type="text"
-        name="email"
-        ngModel
-        #email="ngModel"
+        formControlName="email"
         matInput
-        required
         placeholder="What is your email?"
       />
-      <span matTextSuffix="">@gmail.com</span>
-      <mat-hint>Please enter your email.</mat-hint>
-      <mat-error *ngIf="email.touched">Email is required.</mat-error>
+      <!-- <span matTextSuffix="">@gmail.com</span> -->
+      <mat-hint *ngIf="!email()?.touched">Please enter your email.</mat-hint>
+      <mat-error *ngIf="email()?.errors?.['validEmail']"
+        >Please type a valid email address.</mat-error
+      >
+      <mat-error *ngIf="email()?.touched">Email is required.</mat-error>
     </mat-form-field>
     <br />
     <mat-form-field>
@@ -85,9 +44,14 @@
         matInput
         placeholder="What is your message?"
         cdkTextareaAutosize
+        formControlName="message"
       ></textarea>
-      <mat-hint>Leave me a message!</mat-hint> </mat-form-field
+      <mat-hint *ngIf="!form.get('message')?.touched"
+        >Leave me a message!</mat-hint
+      > </mat-form-field
     ><br />
-    <button mat-raised-button color="primary">Contact me!</button>
+    <button mat-raised-button color="primary" [disabled]="form.invalid">
+      Contact me!
+    </button>
   </form>
 </div>

@@ -1,7 +1,7 @@
 .timeline {
   position: relative;
   max-width: 1200px;
-  margin: 100px auto;
+  margin: auto;
 }
 
 .timeline-container {
@@ -52,7 +52,7 @@
   width: 40px;
   height: 40px;
   border-radius: 50%;
-  background: white;
+  background: black;
   right: -20px;
   top: 32px;
   z-index: 10;
@@ -63,12 +63,12 @@
 }
 
 /* vertical line */
-.timeline::after {
+.timeline::before {
   content: "";
   position: absolute;
   width: 6px;
   height: 100%;
-  background: white;
+  background-color: black;
   top: 0;
   left: 50%;
   margin-left: -3px;

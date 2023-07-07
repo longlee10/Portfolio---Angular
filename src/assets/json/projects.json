@@ -1,0 +1,34 @@
+{
+    "card": [
+        {
+            "imgSrc": "/assets/img/portfolio.png",
+            "title": "Portfolio",
+            "name": "portfolio",
+            "description": "A personal portfolio built with Angular, Typescript and Bootstrap."
+        },
+        {
+            "imgSrc": "/assets/img/Puzzle_store.png",
+            "title": "Puzzle Store",
+            "name": "puzzle",
+            "description": "A puzzle website built with Angular and Boostrap and hosted on Firebase."
+        },
+        {
+            "imgSrc": "/assets/img/Aurora_research.png",
+            "title": "Aurora Research",
+            "name": "research",
+            "description": "A survey website built with MEAN stack and is hosted on Heroku."
+        },
+        {
+            "imgSrc": "/assets/img/Bug_smasher.png",
+            "title": "Bug Smasher",
+            "name": "bug",
+            "description": "A simple web game powered with HTML5, CSS3 and Javascript."
+        }
+    ],
+    "link": {
+        "puzzle": "https://puzzle-store-43bba.firebaseapp.com/",
+        "research": "https://aurora-research-company.herokuapp.com/landing",
+        "bug": "http://studentweb.cencol.ca/hle81/BugSmasher/BugSmasher.html",
+        "portfolio": "https://portfolio-hoanglongle.firebaseapp.com/"
+    }
+}
