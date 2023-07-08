@@ -6,9 +6,9 @@ h1 {
   margin-top: 150px;
 }
 
-a :hover {
+/* a :hover {
   cursor: pointer;
-}
+} */
 
 a {
   text-decoration: none;
@@ -20,4 +20,12 @@ a {
   color: black;
   display: inline-block;
   margin-right: 20px;
+}
+
+.social a {
+  color: black;
+}
+
+.social a:hover {
+  cursor: pointer;
 }

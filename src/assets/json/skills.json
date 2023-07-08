@@ -61,28 +61,8 @@
             "name": "Firebase"
         },
         {
-            "src": "assets/img/mysql.png",
-            "name": "MySQL"
-        },
-        {
             "src": "assets/img/xampp.png",
             "name": "XAMPP"
-        },
-        {
-            "src": "assets/img/jquery.png",
-            "name": "JQuery"
-        },
-        {
-            "src": "assets/img/ubuntu.png",
-            "name": "Ubuntu"
-        },
-        {
-            "src": "assets/img/linux.png",
-            "name": "Linux"
-        },
-        {
-            "src": "assets/img/npm.png",
-            "name": "NPM"
         },
         {
             "src": "assets/img/expressjs.png",
@@ -93,8 +73,24 @@
             "name": "Sass"
         },
         {
-            "src": "assets/img/angula-material.png",
-            "name": "Angular material"
+            "src": "assets/img/redux.png",
+            "name": "Redux"
+        },
+        {
+            "src": "assets/img/sql.png",
+            "name": "SQL"
+        },
+        {
+            "src": "assets/img/ejs.png",
+            "name": "EJS"
+        },
+        {
+            "src": "assets/img/jquery.png",
+            "name": "JQuery"
+        },
+        {
+            "src": "assets/img/linux.png",
+            "name": "Linux"
         }
     ]
 }

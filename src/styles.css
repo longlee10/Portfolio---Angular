@@ -9,22 +9,9 @@
 body {
   font-size: 22px;
   font-family: "Poppins", sans-serif;
-  /* background-image: url("/assets/img/background5.jpg");
-  background-size: cover;
-  background-attachment: fixed; */
-}
-
-body::before {
-  content: "";
-  position: absolute;
-  top: 0px;
-  right: 0px;
-  bottom: 0px;
-  left: 0px;
-  background-image: url("/assets/img/background5.jpg");
+  background-image: url("/assets/img/background1.png");
   background-size: cover;
   background-attachment: fixed;
-  opacity: 0.2;
 }
 
 .container h1 {
