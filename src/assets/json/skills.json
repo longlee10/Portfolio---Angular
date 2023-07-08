@@ -91,6 +91,10 @@
         {
             "src": "assets/img/linux.png",
             "name": "Linux"
+        },
+        {
+            "src": "assets/img/npm.png",
+            "name": "NPM"
         }
     ]
 }
