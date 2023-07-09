@@ -1,26 +1,24 @@
 <div class="container">
   <h1>My Projects.</h1>
-  <div class="card-container">
-    <div class="row">
-      <div *ngFor="let c of card" class="col">
-        <div
-          class="card"
-          [attr.name]="c['name']"
-          #event
-          (click)="openPage(event)"
-        >
-          <img class="card-img-top" [src]="c['imgSrc']" alt="Card image cap" />
-          <div class="card-body">
-            <div class="title-container">
-              <h1 class="card-title">
-                {{ c["title"] }}
-              </h1>
-            </div>
-            <p class="card-text">{{ c["description"] }}</p>
+  <div class="row">
+    <div *ngFor="let c of card" class="col">
+      <div
+        class="card"
+        [attr.name]="c['name']"
+        #event
+        (click)="openPage(event)"
+      >
+        <img class="card-img-top" [src]="c['imgSrc']" alt="Card image cap" />
+        <div class="card-body">
+          <div class="title-container">
+            <h1 class="card-title">
+              {{ c["title"] }}
+            </h1>
           </div>
+          <p class="card-text">{{ c["description"] }}</p>
         </div>
-        <br /><br />
       </div>
+      <br /><br />
     </div>
   </div>
 </div>

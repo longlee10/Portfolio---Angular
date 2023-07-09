@@ -10,7 +10,7 @@
             "imgSrc": "/assets/img/Puzzle_store.png",
             "title": "Puzzle Store",
             "name": "puzzle",
-            "description": "A puzzle website built with Angular and Boostrap and hosted on Firebase."
+            "description": "A puzzle website built with Angular, Typescript, Boostrap is hosted on Firebase."
         },
         {
             "imgSrc": "/assets/img/Aurora_research.png",
