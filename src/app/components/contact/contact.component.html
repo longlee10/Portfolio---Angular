@@ -12,16 +12,13 @@
       <mat-hint *ngIf="!name()?.touched">Please enter your name.</mat-hint>
 
       <mat-error
-        *ngIf="name()?.errors?.['containSpecialChar'] 
+        *ngIf="name()?.errors?.['containSpecialChar']
       "
         >Name can contain only letters.</mat-error
       >
-      <!-- <mat-error *ngIf="name()?.errors?.['emptyString']"
-        >Name is required.</mat-error
-      > -->
+      <mat-error *ngIf="name()?.touched">Name is required.</mat-error>
     </mat-form-field>
 
-    <br />
     <mat-form-field>
       <mat-label>Your email</mat-label>
       <input
@@ -30,14 +27,13 @@
         matInput
         placeholder="What is your email?"
       />
-      <!-- <span matTextSuffix="">@gmail.com</span> -->
       <mat-hint *ngIf="!email()?.touched">Please enter your email.</mat-hint>
-      <mat-error *ngIf="email()?.errors?.['validEmail']"
+      <mat-error *ngIf="email()?.errors?.['invalidEmail']"
         >Please type a valid email address.</mat-error
       >
-      <mat-error *ngIf="email()?.touched">Email is required.</mat-error>
+      <!-- <mat-error *ngIf="email()?.touched">Email is required.</mat-error> -->
     </mat-form-field>
-    <br />
+
     <mat-form-field>
       <mat-label>Your message</mat-label>
       <textarea
@@ -48,10 +44,26 @@
       ></textarea>
       <mat-hint *ngIf="!form.get('message')?.touched"
         >Leave me a message!</mat-hint
-      > </mat-form-field
-    ><br />
-    <button mat-raised-button color="primary" [disabled]="form.invalid">
-      Contact me!
-    </button>
+      >
+    </mat-form-field>
+    <div class="row">
+      <div class="col-7">
+        <button mat-raised-button color="primary" [disabled]="form.invalid">
+          Contact me!
+        </button>
+      </div>
+      <div class="col-5">
+        <div class="social">
+          <a (click)="openPage(linkedin)" #linkedin name="linkedin">
+            <i class="fa fa-linkedin-square"></i>
+          </a>
+          <a (click)="openPage(github)" #github name="github">
+            <i class="fa fa-github"></i></a
+          ><a href="mailto: longquan98@gmail.com"
+            ><i class="fa fa-envelope"></i
+          ></a>
+        </div>
+      </div>
+    </div>
   </form>
 </div>

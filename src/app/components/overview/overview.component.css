@@ -1,31 +1,77 @@
 h1 {
   font-size: 70px;
+  margin-bottom: 50px;
 }
 
 .greet {
   margin-top: 150px;
 }
 
-/* a :hover {
-  cursor: pointer;
-} */
+button {
+  margin-top: 15px;
+}
 
 a {
   text-decoration: none;
   color: white;
 }
 
-.fa {
-  font-size: 30px;
-  color: black;
-  display: inline-block;
-  margin-right: 20px;
+.multi-text {
+  display: flex;
 }
 
-.social a {
-  color: black;
+.static {
+  font-size: 25px;
+  height: 30px;
 }
 
-.social a:hover {
-  cursor: pointer;
+.dynamic-container {
+  display: block;
+  height: 30px;
+  overflow: hidden;
+}
+
+.dynamic-container li {
+  list-style: none;
+  margin-bottom: 15px;
+  position: relative;
+  top: 0;
+  animation: sliding 9s steps(3) infinite;
+}
+
+@keyframes sliding {
+  100% {
+    top: -120px;
+  }
+}
+
+.dynamic {
+  position: relative;
+  margin-left: 5px;
+  line-height: 25px;
+  font-size: 25px;
+  color: chocolate;
+  font-weight: bold;
+}
+
+.multi-text .dynamic::after {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  height: 120%;
+  width: 100%;
+  background-image: url("/assets/img/bg.png");
+  border-left: 2px solid;
+  animation: typing 3s steps(12) infinite;
+}
+
+@keyframes typing {
+  40%,
+  60% {
+    left: 100%;
+  }
+  100% {
+    left: 0;
+  }
 }

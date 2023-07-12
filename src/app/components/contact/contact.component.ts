@@ -1,6 +1,7 @@
 import { Component } from '@angular/core';
 import { FormControl, FormGroup, Validators } from '@angular/forms';
 import { Validator } from './contact.validators';
+import { HttpClient } from '@angular/common/http';
 
 @Component({
   selector: 'app-contact',
@@ -12,15 +13,21 @@ export class ContactComponent {
     name: new FormControl('', [
       Validators.required,
       Validator.containSpecialChar,
-      Validator.emptyString,
     ]),
-    email: new FormControl('', [
-      Validators.required,
-      Validator.validEmail,
-      Validator.emptyString,
-    ]),
+    email: new FormControl('', [Validators.required, Validator.invalidEmail]),
     message: new FormControl(),
   });
+
+  constructor(private http: HttpClient) {}
+
+  private url: string = '/assets/json/overview.json';
+  link = {};
+
+  ngOnInit() {
+    this.http.get(this.url).subscribe((json) => {
+      this.link = json['link'];
+    });
+  }
 
   name() {
     return this.form.get('name');
@@ -32,5 +39,9 @@ export class ContactComponent {
 
   submit(form) {
     console.log(form.value);
+  }
+
+  openPage(event: any) {
+    window.open(this.link[event.name]);
   }
 }
