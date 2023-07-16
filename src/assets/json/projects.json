@@ -3,32 +3,32 @@
         {
             "imgSrc": "/assets/img/portfolio.png",
             "title": "Portfolio",
-            "name": "portfolio",
-            "description": "A personal portfolio built with Angular, Typescript and Bootstrap."
+            "description": "A personal portfolio built with Angular, Typescript and Bootstrap.",
+            "link": "https://portfolio-hoanglongle.firebaseapp.com/"
         },
         {
             "imgSrc": "/assets/img/Puzzle_store.png",
             "title": "Puzzle Store",
-            "name": "puzzle",
-            "description": "A puzzle website built with Angular, Typescript, Boostrap and is hosted on Firebase."
+            "description": "A puzzle website built with Angular, Typescript, Boostrap and is hosted on Firebase.",
+            "link": "https://puzzle-store-43bba.firebaseapp.com/"
         },
         {
             "imgSrc": "/assets/img/Aurora_research.png",
             "title": "Aurora Research",
-            "name": "research",
-            "description": "A survey website built with MEAN stack and is hosted on Heroku."
+            "description": "A survey website built with MEAN stack and is hosted on Heroku.",
+            "link": "https://aurora-research-company.herokuapp.com/landing"
         },
         {
             "imgSrc": "/assets/img/Bug_smasher.png",
             "title": "Bug Smasher",
-            "name": "bug",
-            "description": "A simple web game powered with HTML5, CSS3 and Javascript."
+            "description": "A simple web game powered with HTML5, CSS3 and Javascript.",
+            "link": "http://studentweb.cencol.ca/hle81/BugSmasher/BugSmasher.html"
+        },
+        {
+            "imgSrc": "/assets/img/registration.png",
+            "title": "Registration",
+            "description": "A simple registration page powered with HTML5, CSS3 and Javascript.",
+            "link": "http://studentweb.cencol.ca/hle81/Assignment4/Assignment4.html"
         }
-    ],
-    "link": {
-        "puzzle": "https://puzzle-store-43bba.firebaseapp.com/",
-        "research": "https://aurora-research-company.herokuapp.com/landing",
-        "bug": "http://studentweb.cencol.ca/hle81/BugSmasher/BugSmasher.html",
-        "portfolio": "https://portfolio-hoanglongle.firebaseapp.com/"
-    }
+    ]
 }

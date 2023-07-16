@@ -8,18 +8,12 @@ import { Component } from '@angular/core';
 })
 export class ProjectsComponent {
   card = [];
-  link = {};
   url = '/assets/json/projects.json';
   constructor(private http: HttpClient) {}
-
-  openPage(event) {
-    window.open(this.link[event.getAttribute('name')]);
-  }
 
   ngOnInit() {
     this.http.get(this.url).subscribe((json) => {
       this.card = json['card'];
-      this.link = json['link'];
     });
   }
 }
