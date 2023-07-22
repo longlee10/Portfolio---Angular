@@ -1,18 +1,55 @@
-.navbar{
-    font-size: 19px;
+.my-navbar {
+  font-size: 19px;
+  background-color: white;
+  font-weight: bold;
+  text-align: center;
+  padding-top: 1rem;
+}
+
+.my-navbar ul {
+  display: flex;
+  flex-direction: column;
+  list-style: none;
+}
+
+li {
+  margin: 0.5rem 7rem 0.5rem 5rem;
 }
 
 .active-link {
-     color:#3F51B5;
+  color: #3f51b5;
 }
 
-.collapse{
-    padding-left: 150px;
-    padding-right: 150px;
-    font-weight: bold;
+a {
+  text-decoration: none;
+  color: black;
 }
 
-.active{
-    color: orange;
-    font-weight: bold;
+@media screen and (min-width: 800px) {
+  .my-navbar {
+    display: grid;
+    grid-template-columns: 40fr 60fr;
+    grid-template-areas: "brand items";
+  }
+
+  .my-navbar .item-link {
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-end;
+    grid-area: items;
+  }
+
+  .my-navbar .item-link li {
+    margin: 0.5rem 0.8rem;
+  }
+
+  .my-navbar .brand {
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-start;
+  }
+
+  .my-navbar .brand li {
+    margin-left: 0.1rem;
+  }
 }
