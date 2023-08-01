@@ -1,6 +1,8 @@
 import { Component } from '@angular/core';
 import { FormControl, FormGroup, Validators } from '@angular/forms';
 import { Validator } from './contact.validators';
+import { HttpClient } from '@angular/common/http';
+import { Router } from '@angular/router';
 
 @Component({
   selector: 'app-contact',
@@ -17,6 +19,10 @@ export class ContactComponent {
     message: new FormControl(),
   });
 
+  private url = '';
+
+  constructor(private http: HttpClient, private router: Router) {}
+
   name() {
     return this.form.get('name');
   }
@@ -26,6 +32,10 @@ export class ContactComponent {
   }
 
   submit(form) {
-    console.log(form.value);
+    this.http
+      .post('https://formspree.io/f/xwkdvodq', form.value)
+      .subscribe(
+        (data) => (window.location.href = 'https://formspree.io' + data['next'])
+      );
   }
 }

@@ -6,6 +6,7 @@
       <input
         type="text"
         matInput
+        name="Name"
         placeholder="What is your name?"
         formControlName="name"
       />
@@ -22,9 +23,10 @@
     <mat-form-field>
       <mat-label>Your email</mat-label>
       <input
-        type="text"
+        type="email"
         formControlName="email"
         matInput
+        name="Email"
         placeholder="What is your email?"
       />
       <mat-hint *ngIf="!email()?.touched">Please enter your email.</mat-hint>
@@ -40,6 +42,7 @@
         matInput
         placeholder="What is your message?"
         cdkTextareaAutosize
+        name="Message"
         formControlName="message"
       ></textarea>
       <mat-hint *ngIf="!form.get('message')?.touched"
@@ -55,12 +58,12 @@
       <div class="col-5">
         <div class="social">
           <a href="https://www.linkedin.com/in/hoanglongle/" target="_blank">
-            <i class="fa fa-linkedin-square"></i>
+            <span class="fa fa-linkedin-square"></span>
           </a>
           <a href="https://github.com/longlee10" target="_blank">
-            <i class="fa fa-github"></i></a
+            <span class="fa fa-github"></span></a
           ><a href="mailto: longquan98@gmail.com"
-            ><i class="fa fa-envelope"></i
+            ><span class="fa fa-envelope"></span
           ></a>
         </div>
       </div>
