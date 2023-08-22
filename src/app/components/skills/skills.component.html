@@ -1,8 +1,8 @@
 <div class="container">
-  <h1>My tech stack.</h1>
+  <h1 class="skill-heading">My tech stack.</h1>
 
-  <div class="row">
-    <div *ngFor="let src of imgSrc" class="col-2">
+  <div class="skill-container">
+    <div *ngFor="let src of imgSrc">
       <div class="card" style="width: 10rem; height: 8rem">
         <img class="card-img-top" [src]="src['src']" alt="Card image cap" />
         <div class="card-body">

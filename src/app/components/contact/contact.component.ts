@@ -34,8 +34,9 @@ export class ContactComponent {
   submit(form) {
     this.http
       .post('https://formspree.io/f/xwkdvodq', form.value)
-      .subscribe(
-        (data) => (window.location.href = 'https://formspree.io' + data['next'])
-      );
+      .subscribe((data) => {
+        window.location.href = 'https://formspree.io' + data['next'];
+        form.reset();
+      });
   }
 }

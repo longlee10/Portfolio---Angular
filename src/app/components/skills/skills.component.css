@@ -18,3 +18,33 @@ img {
 .card-text {
   font-weight: bold;
 }
+
+.skill-container {
+  margin: auto;
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  justify-items: center;
+  align-items: center;
+}
+
+.container {
+  text-align: center;
+}
+
+@media screen and (min-width: 500px) {
+  .skill-container {
+    grid-template-columns: repeat(3, 1fr);
+  }
+}
+
+@media screen and (min-width: 800px) {
+  .skill-container {
+    grid-template-columns: repeat(4, 1fr);
+  }
+}
+
+@media screen and (min-width: 1024px) {
+  .skill-container {
+    grid-template-columns: repeat(6, 1fr);
+  }
+}
