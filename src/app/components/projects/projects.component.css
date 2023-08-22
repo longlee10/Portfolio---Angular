@@ -1,15 +1,18 @@
+.container {
+  text-align: center;
+  padding-bottom: 2rem;
+}
+
 .card {
-  width: 30rem;
   margin: auto;
   overflow: hidden;
-  /* border: 2px solid black; */
   border-radius: 10px;
   box-shadow: 5px 5px 20px black;
 }
 
 .card-title {
   font-weight: bold;
-  font-size: 25px;
+  font-size: 1.3rem;
 }
 
 img {
@@ -20,21 +23,13 @@ a:hover {
   cursor: pointer;
 }
 
-/* .card-container {
-  margin: auto;
-  background-color: #20283d;
-  padding: 20px;
-  border-radius: 5px;
-  opacity: 0.7;
-} */
-
 .card:hover {
   cursor: pointer;
 }
 
 .card-body {
   height: 52px;
-  width: 30rem;
+  width: 100%;
   box-sizing: border-box;
   position: absolute;
   bottom: 0px;
@@ -44,6 +39,15 @@ a:hover {
 p {
   visibility: hidden;
   opacity: 0;
+}
+
+.card-text,
+.card-title {
+  text-align: left;
+}
+
+.card-text {
+  font-size: 0.8rem;
 }
 
 .card:hover .card-body {
@@ -63,6 +67,39 @@ p {
   transition: 2s;
 }
 
-.card {
-  margin-bottom: 50px;
+.project-container {
+  display: grid;
+  grid-template-columns: 1fr;
+  gap: 3rem 2rem;
+  justify-items: center;
+  align-items: center;
+  width: 100%;
+  margin: auto;
+}
+
+@media screen and (min-width: 800px) {
+  .project-container {
+    grid-template-columns: 1fr 1fr;
+    gap: 3rem;
+  }
+
+  .project {
+    width: 20rem;
+  }
+}
+
+@media screen and (min-width: 1000px) and (max-width: 1070px) {
+  .project {
+    width: 25rem;
+  }
+}
+
+@media screen and (min-width: 1100px) {
+  .project {
+    width: 28rem;
+  }
+
+  .card-text {
+    font-size: 1rem;
+  }
 }

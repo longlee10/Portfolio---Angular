@@ -1,9 +1,9 @@
 <div class="container">
-  <h1>My Projects.</h1>
-  <div class="row">
-    <div *ngFor="let c of card" class="col">
-      <a [href]="c['link']" target="_blank"
-        ><div class="card">
+  <h1 class="project-heading">My Projects.</h1>
+  <div class="project-container">
+    <div *ngFor="let c of card" class="project">
+      <a [href]="c['link']" target="_blank">
+        <div class="card">
           <img class="card-img-top" [src]="c['imgSrc']" alt="Card image cap" />
           <div class="card-body">
             <div class="title-container">
@@ -13,8 +13,8 @@
             </div>
             <p class="card-text">{{ c["description"] }}</p>
           </div>
-        </div></a
-      >
+        </div>
+      </a>
     </div>
   </div>
 </div>
