@@ -1,25 +1,49 @@
-form {
-  width: 400px;
+.contact-form {
+  width: 100%;
   margin: auto;
 }
 
-mat-form-field {
-  width: 400px;
-  font-size: 20px;
-  margin-bottom: 20px;
+.form-field {
+  width: 100%;
+  margin-bottom: 2rem;
+}
+
+.form-field > mat-label {
+  font-size: 0.2rem;
 }
 
 .fa {
-  font-size: 30px;
+  font-size: 1.3rem;
   color: black;
-  display: inline-block;
-  margin-right: 20px;
+  margin-right: 1rem;
 }
 
 .social a:hover {
   cursor: pointer;
 }
 
-.col-5 {
-  margin-top: 5px;
+.button {
+  font-size: 0.6rem;
+  margin-right: 1rem;
+  padding: 1.1rem;
+}
+
+.contact-footer {
+  display: flex;
+  justify-content: space-between;
+}
+
+@media screen and (min-width: 430px) {
+  .contact-form,
+  .form-field {
+    width: 22rem;
+  }
+
+  .social {
+    font-size: 3rem;
+  }
+
+  .button {
+    font-size: 0.9rem;
+  }
 }
