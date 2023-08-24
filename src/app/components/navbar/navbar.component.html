@@ -1,8 +1,12 @@
-<div class="my-navbar">
-  <ul class="brand">
-    <li><a routerLink="">Hoang Long Le</a></li>
-  </ul>
-  <ul class="item-link">
+<nav
+  class="my-navbar collapsible"
+  [ngClass]="{ 'collapsible-expand': expanded }"
+>
+  <a class="brand" routerLink="">Hoang Long Le</a>
+  <svg class="icon icon-black nav-toggler" (click)="toggle()">
+    <use xlink:href="assets/svg/icons.svg#menu"></use>
+  </svg>
+  <ul class="item-link nav-list collapsible-content">
     <li>
       <a routerLink="/skills" routerLinkActive="active-link">Skills</a>
     </li>
@@ -16,4 +20,4 @@
       <a routerLink="/contact" routerLinkActive="active-link">Contact</a>
     </li>
   </ul>
-</div>
+</nav>

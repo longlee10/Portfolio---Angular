@@ -1,15 +1,18 @@
 .my-navbar {
-  font-size: 19px;
+  display: flex;
+  justify-content: space-between;
+  flex-wrap: wrap;
+  font-size: 1.4rem;
   background-color: white;
   font-weight: bold;
-  text-align: center;
-  padding-top: 1rem;
+  padding-left: 1rem;
+  padding-top: 0.5rem;
+  align-items: center;
 }
 
-.my-navbar ul {
-  display: flex;
-  flex-direction: column;
-  list-style: none;
+.brand {
+  margin-top: 1rem;
+  margin-bottom: 1rem;
 }
 
 li {
@@ -25,31 +28,58 @@ a {
   color: black;
 }
 
+/* Collapsible */
+
+.collapsible-content {
+  margin-top: 1rem;
+  padding-left: 0;
+  opacity: 0;
+  max-height: 0;
+  overflow: hidden;
+  transition: all 0.3s;
+}
+
+.collapsible-content li {
+  margin-left: 0;
+}
+
+.collapsible-expand .collapsible-content {
+  opacity: 1;
+  max-height: 100vh;
+  overflow: visible;
+}
+
+/* toggler icon */
+.icon {
+  width: 40px;
+  height: 40px;
+  margin-right: 0.5rem;
+  cursor: pointer;
+}
+
+.nav-toggler {
+  opacity: 0.5;
+}
+
+.nav-list {
+  width: 100%;
+  margin: 0;
+  list-style: none;
+}
+
 @media screen and (min-width: 800px) {
-  .my-navbar {
-    display: grid;
-    grid-template-columns: 40fr 60fr;
-    grid-template-areas: "brand items";
+  .icon {
+    display: none;
   }
 
-  .my-navbar .item-link {
+  .nav-list {
+    opacity: 1;
+    max-height: 100%;
+    width: auto;
     display: flex;
-    flex-direction: row;
-    justify-content: flex-end;
-    grid-area: items;
   }
 
-  .my-navbar .item-link li {
-    margin: 0.5rem 0.8rem;
-  }
-
-  .my-navbar .brand {
-    display: flex;
-    flex-direction: row;
-    justify-content: flex-start;
-  }
-
-  .my-navbar .brand li {
-    margin-left: 0.1rem;
+  .nav-list li {
+    margin-right: 2rem;
   }
 }
