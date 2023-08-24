@@ -1,77 +1,36 @@
-h1 {
-  font-size: 70px;
-  margin-bottom: 50px;
+.greeting,
+.name {
+  font-size: 3rem;
+  line-height: 3rem;
+}
+
+.intro {
+  font-size: 1.8rem;
+  line-height: 2rem;
 }
 
 .greet {
-  margin-top: 150px;
+  margin-top: 5rem;
 }
 
 button {
   margin-top: 15px;
 }
 
-a {
+.download {
   text-decoration: none;
   color: white;
 }
 
-.multi-text {
-  display: flex;
-}
-
-.static {
-  font-size: 25px;
-  height: 30px;
-}
-
-.dynamic-container {
-  display: block;
-  height: 30px;
-  overflow: hidden;
-}
-
-.dynamic-container li {
-  list-style: none;
-  margin-bottom: 15px;
-  position: relative;
-  top: 0;
-  animation: sliding 9s steps(3) infinite;
-}
-
-@keyframes sliding {
-  100% {
-    top: -120px;
+@media screen and (min-width: 500px) {
+  .greeting,
+  .name {
+    font-size: 4rem;
+    line-height: 4.5rem;
   }
-}
 
-.dynamic {
-  position: relative;
-  margin-left: 5px;
-  line-height: 25px;
-  font-size: 25px;
-  color: chocolate;
-  font-weight: bold;
-}
-
-.multi-text .dynamic::after {
-  content: "";
-  position: absolute;
-  top: 0;
-  left: 0;
-  height: 120%;
-  width: 100%;
-  background-image: url("/assets/img/bg.png");
-  border-left: 2px solid;
-  animation: typing 3s steps(12) infinite;
-}
-
-@keyframes typing {
-  40%,
-  60% {
-    left: 100%;
-  }
-  100% {
-    left: 0;
+  .intro {
+    font-size: 2.8rem;
+    line-height: 3.5rem;
   }
 }
