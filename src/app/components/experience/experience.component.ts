@@ -8,6 +8,7 @@ import { ReadJsonServiceService } from 'src/app/services/read-json-service.servi
   styleUrls: ['./experience.component.css'],
 })
 export class ExperienceComponent {
+  viewportWidth: number = window.innerWidth;
   experience = [];
   private url: string = '/assets/json/experience.json';
   leftAlign: boolean;
@@ -21,5 +22,6 @@ export class ExperienceComponent {
     this.readJson.readJson(this.url).subscribe((json) => {
       this.experience = json['exp'];
     });
+    console.log(this.viewportWidth);
   }
 }
