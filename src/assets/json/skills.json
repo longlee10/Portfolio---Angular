@@ -85,12 +85,12 @@
             "name": "EJS"
         },
         {
-            "src": "assets/img/jquery.png",
-            "name": "JQuery"
+            "src": "assets/img/milligram.png",
+            "name": "Milligram"
         },
         {
-            "src": "assets/img/linux.png",
-            "name": "Linux"
+            "src": "assets/img/netlify.png",
+            "name": "Netlify"
         },
         {
             "src": "assets/img/npm.png",
