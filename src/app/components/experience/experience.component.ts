@@ -22,6 +22,5 @@ export class ExperienceComponent {
     this.readJson.readJson(this.url).subscribe((json) => {
       this.experience = json['exp'];
     });
-    console.log(this.viewportWidth);
   }
 }

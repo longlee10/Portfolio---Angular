@@ -1,9 +1,9 @@
 <div class="container">
-  <h1 class="skill-heading">My tech stack.</h1>
+  <h1 class="heading">My tech stack.</h1>
 
   <div class="skill-container">
     <div *ngFor="let src of imgSrc">
-      <div class="card" style="width: 10rem; height: 8rem">
+      <div class="card">
         <img class="card-img-top" [src]="src['src']" alt="Card image cap" />
         <div class="card-body">
           <p class="card-text">{{ src["name"] }}</p>

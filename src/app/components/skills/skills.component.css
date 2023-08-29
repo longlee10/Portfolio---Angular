@@ -3,8 +3,8 @@
 }
 
 img {
-  min-height: 65px;
-  width: 65px;
+  height: 4rem;
+  width: 4rem;
   margin: auto;
   margin-top: 15px;
   object-fit: contain;
