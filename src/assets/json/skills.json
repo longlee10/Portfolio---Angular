@@ -1,32 +1,36 @@
 {
     "imgSrc": [
         {
-            "src": "assets/img/angular.png",
-            "name": "Angular"
-        },
-        {
-            "src": "assets/img/react.png",
-            "name": "React"
-        },
-        {
-            "src": "assets/img/node.png",
-            "name": "NodeJS"
-        },
-        {
-            "src": "assets/img/mongodb.png",
-            "name": "MongoDB"
-        },
-        {
-            "src": "assets/img/bootstrap.png",
-            "name": "Bootstrap"
-        },
-        {
             "src": "assets/img/html5.png",
             "name": "HTML5"
         },
         {
             "src": "assets/img/css3.png",
             "name": "CSS3"
+        },
+        {
+            "src": "assets/img/sass.png",
+            "name": "Sass"
+        },
+        {
+            "src": "assets/img/bootstrap.png",
+            "name": "Bootstrap"
+        },
+        {
+            "src": "assets/img/tailwind.png",
+            "name": "Tailwind"
+        },
+        {
+            "src": "assets/img/chakra.png",
+            "name": "Chakra UI"
+        },
+        {
+            "src": "assets/img/daisy.png",
+            "name": "Daisy UI"
+        },
+        {
+            "src": "assets/img/milligram.png",
+            "name": "Milligram"
         },
         {
             "src": "assets/img/js.png",
@@ -37,8 +41,56 @@
             "name": "Typescript"
         },
         {
+            "src": "assets/img/angular.png",
+            "name": "Angular"
+        },
+        {
+            "src": "assets/img/react.png",
+            "name": "React"
+        },
+        {
+            "src": "assets/img/nextjs.png",
+            "name": "NextJS"
+        },
+        {
             "src": "assets/img/git.png",
             "name": "GIT"
+        },
+        {
+            "src": "assets/img/node.png",
+            "name": "NodeJS"
+        },
+        {
+            "src": "assets/img/expressjs.png",
+            "name": "ExpressJS"
+        },
+        {
+            "src": "assets/img/mongodb.png",
+            "name": "MongoDB"
+        },
+        {
+            "src": "assets/img/mysql.png",
+            "name": "MySQL"
+        },
+        {
+            "src": "assets/img/heroku.png",
+            "name": "Heroku"
+        },
+        {
+            "src": "assets/img/firebase.png",
+            "name": "Firebase"
+        },
+        {
+            "src": "assets/img/netlify.png",
+            "name": "Netlify"
+        },
+        {
+            "src": "assets/img/vercel.png",
+            "name": "Vercel"
+        },
+        {
+            "src": "assets/img/xampp.png",
+            "name": "XAMPP"
         },
         {
             "src": "assets/img/py.png",
@@ -51,50 +103,6 @@
         {
             "src": "assets/img/java.png",
             "name": "Java"
-        },
-        {
-            "src": "assets/img/heroku.png",
-            "name": "Heroku"
-        },
-        {
-            "src": "assets/img/firebase.png",
-            "name": "Firebase"
-        },
-        {
-            "src": "assets/img/xampp.png",
-            "name": "XAMPP"
-        },
-        {
-            "src": "assets/img/expressjs.png",
-            "name": "ExpressJS"
-        },
-        {
-            "src": "assets/img/sass.png",
-            "name": "Sass"
-        },
-        {
-            "src": "assets/img/redux.png",
-            "name": "Redux"
-        },
-        {
-            "src": "assets/img/sql.png",
-            "name": "SQL"
-        },
-        {
-            "src": "assets/img/ejs.png",
-            "name": "EJS"
-        },
-        {
-            "src": "assets/img/milligram.png",
-            "name": "Milligram"
-        },
-        {
-            "src": "assets/img/netlify.png",
-            "name": "Netlify"
-        },
-        {
-            "src": "assets/img/npm.png",
-            "name": "NPM"
         }
     ]
 }
