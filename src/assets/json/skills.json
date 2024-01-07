@@ -29,6 +29,10 @@
             "name": "Daisy UI"
         },
         {
+            "src": "assets/img/radix.png",
+            "name": "Radix UI"
+        },
+        {
             "src": "assets/img/milligram.png",
             "name": "Milligram"
         },

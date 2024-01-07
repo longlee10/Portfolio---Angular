@@ -1,11 +1,11 @@
 .greeting,
 .name {
-  font-size: 3rem;
-  line-height: 3rem;
+  font-size: 1.5rem;
+  line-height: 1.5rem;
 }
 
 .intro {
-  font-size: 1.8rem;
+  font-size: 1.5rem;
   line-height: 2rem;
 }
 
@@ -25,12 +25,12 @@ button {
 @media screen and (min-width: 500px) {
   .greeting,
   .name {
-    font-size: 4rem;
-    line-height: 4.5rem;
+    font-size: 2rem;
+    line-height: 1.5rem;
   }
 
   .intro {
-    font-size: 2.8rem;
+    font-size: 1.8rem;
     line-height: 3.5rem;
   }
 }

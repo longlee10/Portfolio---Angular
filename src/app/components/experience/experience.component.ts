@@ -8,19 +8,10 @@ import { ReadJsonServiceService } from 'src/app/services/read-json-service.servi
   styleUrls: ['./experience.component.css'],
 })
 export class ExperienceComponent {
-  viewportWidth: number = window.innerWidth;
-  experience = [];
-  private url: string = '/assets/json/experience.json';
-  leftAlign: boolean;
-
   constructor(
     private http: HttpClient,
     private readJson: ReadJsonServiceService
   ) {}
 
-  ngOnInit() {
-    this.readJson.readJson(this.url).subscribe((json) => {
-      this.experience = json['exp'];
-    });
-  }
+  ngOnInit() {}
 }

@@ -1,23 +1,65 @@
 <div class="container">
   <h1 class="heading">My Professional Experience.</h1>
-  <div class="timeline">
+  <div class="d-flex justify-content-between mt-5 experience">
     <div
-      *ngFor="let e of experience"
-      class="timeline-container"
-      [class.right-container]="!e['alignLeft']"
+      class="mb-5 border border-dark p-3 border-rounded w-experience font-size text-center"
     >
-      <div class="circle"></div>
-      <div class="text-box">
-        <h2>{{ e["place"] }}</h2>
-        <p>{{ e["name"] }}</p>
-        <small>{{ e["time"] }}</small>
-        <span *ngIf="viewportWidth < 800" class="arrow-right"></span>
-        <span
-          *ngIf="viewportWidth >= 800"
-          [class.arrow-left]="e['alignLeft']"
-          [class.arrow-right]="!e['alignLeft']"
-        ></span>
+      <h1>Educations</h1>
+      <img src="/assets/img/education.png" class="img-size mb-3" />
+      <div class="mb-4">
+        <p><strong>Centennial College</strong></p>
+        <p>Software Engineering Technology - 3rd year</p>
+      </div>
+      <div>
+        <p><strong>Ho Chi Minh City University of Law</strong></p>
+        <p>Law - Business Administration</p>
+      </div>
+    </div>
+
+    <div
+      class="mb-5 border border-dark p-3 border-rounded w-experience font-size text-center"
+    >
+      <h1>Work Experience</h1>
+      <img src="/assets/img/work.png" class="img-size mb-3" />
+      <div>
+        <p><strong>Pearson Canada</strong></p>
+        <p>Media Developer Co-op Student</p>
+      </div>
+    </div>
+
+    <div
+      class="mb-5 border border-dark p-3 border-rounded w-experience font-size text-center"
+    >
+      <h1>Certifications</h1>
+      <img src="/assets/img/certificate.png" class="img-size-high mb-3" />
+      <div class="mb-4">
+        <p><strong>Code with Mosh</strong></p>
+        <p>Mastering NextJS 13</p>
+      </div>
+      <div class="mb-4">
+        <p><strong>Code with Mosh</strong></p>
+        <p>Mastering React 18</p>
+      </div>
+      <div class="mb-4">
+        <p><strong>Code with Mosh</strong></p>
+        <p>The Ultimate GIT course</p>
+      </div>
+      <div class="mb-4">
+        <p><strong>Code with Mosh</strong></p>
+        <p>Data Structure & Algorithms</p>
       </div>
     </div>
   </div>
+  <p class="font-size font-weight-600">
+    I am currently pursuing an advanced diploma in Software Engineering
+    Technology at Centenial College. In addition, I have 8 months of working
+    experience as a Media Web Developer Co-op Student - with tasks including
+    developing and testing websites.
+  </p>
+  <p class="font-size font-weight-600">
+    My skill set includes building full-stack web / software applications using
+    various frameworks and libraries, working with source code version control,
+    databases, building API, deploying, hosting, testing websites, improving
+    user experience and web accessibility.
+  </p>
 </div>

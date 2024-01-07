@@ -6,13 +6,18 @@
   background-color: white;
   font-weight: bold;
   padding-left: 1rem;
-  padding-top: 0.5rem;
+  padding: 0.2rem;
   align-items: center;
+  position: fixed;
+  width: 100vw;
+  z-index: 1000;
+  vertical-align: middle;
 }
 
 .brand {
   margin-top: 1rem;
   margin-bottom: 1rem;
+  margin-left: 1rem;
 }
 
 li {
@@ -53,7 +58,7 @@ a {
 .icon {
   width: 40px;
   height: 40px;
-  margin-right: 0.5rem;
+  margin-right: 1.5rem;
   cursor: pointer;
 }
 

@@ -2,147 +2,39 @@
   padding: 2rem;
 }
 
-.timeline {
-  position: relative;
-  max-width: 1200px;
-  margin: auto;
+.w-experience {
+  width: 30%;
 }
 
-.timeline-container {
-  position: relative;
-  padding: 10px 0 10px 3rem;
-  width: 100%;
-  animation: movedown 1s linear forwards;
-  opacity: 0;
+.border-rounded {
+  border-radius: 20px;
 }
 
-@keyframes movedown {
-  0% {
-    opacity: 1;
-    transform: translateY(-30px);
-  }
-  100% {
-    opacity: 1;
-    transform: translateY(0px);
-  }
-}
-
-.timeline-container:nth-child(2) {
-  animation-delay: 1s;
-}
-
-.timeline-container:nth-child(3) {
-  animation-delay: 2s;
-}
-
-.text-box {
-  padding: 20px 30px;
-  background: white;
-  position: relative;
-  border-radius: 6px;
-  font-size: 15px;
-}
-
-.text-box h2 {
+.font-size {
   font-size: 1rem;
-  line-height: 1.3rem;
 }
 
-.text-box p {
-  font-size: 0.8rem;
+.font-weight-600 {
+  font-weight: 600;
 }
 
-.left-container {
-  left: 0;
+.img-size {
+  width: 30px;
+  height: 30px;
 }
 
-.timeline-container .circle {
-  position: absolute;
-  width: 40px;
+.img-size-high {
+  width: 30px;
   height: 40px;
-  border-radius: 50%;
-  background: black;
-  left: -20px;
-  top: 32px;
-  z-index: 10;
 }
 
-/* vertical line */
-.timeline::before {
-  content: "";
-  position: absolute;
-  width: 6px;
-  height: 100%;
-  background-color: black;
-  top: 0;
-  margin-left: -3px;
-  z-index: -1;
-  animation: moveline 3s linear forwards;
-}
-
-@keyframes moveline {
-  0% {
-    height: 0;
-  }
-  100% {
-    height: 100%;
-  }
-}
-
-.text-box h2,
-.text-box p {
-  font-weight: bold;
-}
-
-.text-box small {
-  display: inline-block;
-  margin-bottom: 15px;
-}
-
-.arrow-left {
-  height: 0;
-  width: 0;
-  position: absolute;
-  top: 28px;
-  z-index: 1;
-  border-top: 15px solid transparent;
-  border-bottom: 15px solid transparent;
-  border-left: 15px solid white;
-  right: -15px;
-}
-
-.arrow-right {
-  height: 0;
-  width: 0;
-  position: absolute;
-  top: 28px;
-  z-index: 1;
-  border-top: 15px solid transparent;
-  border-bottom: 15px solid transparent;
-  border-right: 15px solid white;
-  left: -15px;
-}
-
-@media screen and (min-width: 800px) {
-  .timeline::before {
-    left: 50%;
+@media screen and (max-width: 785px) {
+  .experience {
+    flex-direction: column;
+    align-items: center;
   }
 
-  .right-container {
-    left: 50%;
-  }
-
-  .timeline-container {
-    padding: 10px 50px;
-    width: 50%;
-  }
-
-  .timeline-container .circle {
-    right: -20px;
-    left: auto;
-  }
-
-  .right-container .circle {
-    left: -20px;
+  .w-experience {
+    width: 90%;
   }
 }
