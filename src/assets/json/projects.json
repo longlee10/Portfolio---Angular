@@ -7,6 +7,18 @@
             "link": "https://portfolio-hoanglongle.firebaseapp.com/"
         },
         {
+            "imgSrc": "/assets/img/issue-tracker.png",
+            "title": "Issue Tracker",
+            "description": "An issue tracker website built with NextJS 13, React 18, Typescript, Radix UI and Tailwind.",
+            "link": "https://issue-tracker-ten-rho.vercel.app/"
+        },
+        {
+            "imgSrc": "/assets/img/game-hub.png",
+            "title": "Game Hub",
+            "description": "A game website built with React 18, Typescript and Chackra UI.",
+            "link": "https://game-hub-delta-vert.vercel.app/"
+        },
+        {
             "imgSrc": "/assets/img/Puzzle_store.png",
             "title": "Puzzle Store",
             "description": "A puzzle website built with Angular, Typescript, Boostrap and is hosted on Firebase.",
