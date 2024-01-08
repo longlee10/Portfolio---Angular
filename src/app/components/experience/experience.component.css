@@ -14,8 +14,16 @@
   font-size: 1rem;
 }
 
-.font-weight-600 {
-  font-weight: 600;
+.mt-2rem {
+  margin-top: 2.1rem;
+}
+
+.font-weight-bold {
+  font-weight: bold;
+}
+
+.intro-color {
+  color: #6c757d;
 }
 
 .img-size {

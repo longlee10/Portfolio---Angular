@@ -17,9 +17,19 @@ button {
   margin-top: 15px;
 }
 
-.download {
+.button-link {
   text-decoration: none;
   color: white;
+}
+
+.link-arrow::after {
+  content: ">>";
+  margin-left: 5px;
+  transition: margin 0.15s;
+}
+
+.link-arrow:hover::after {
+  margin-left: 10px;
 }
 
 @media screen and (min-width: 500px) {
