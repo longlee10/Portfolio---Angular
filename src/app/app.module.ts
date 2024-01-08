@@ -14,6 +14,7 @@ import { MatButtonModule } from '@angular/material/button';
 import { FormsModule, ReactiveFormsModule } from '@angular/forms';
 import { HttpClientModule } from '@angular/common/http';
 import { SkillsComponent } from './components/skills/skills.component';
+import { SocialComponent } from './components/social/social.component';
 
 @NgModule({
   declarations: [
@@ -23,6 +24,7 @@ import { SkillsComponent } from './components/skills/skills.component';
     ContactComponent,
     OverviewComponent,
     ExperienceComponent,
+    SocialComponent,
     SkillsComponent,
   ],
   imports: [

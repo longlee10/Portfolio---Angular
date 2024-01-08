@@ -8,10 +8,16 @@ export class Validator {
   }
 
   static invalidEmail(control: AbstractControl): ValidationErrors | null {
-    const emailForm =
-      /^([a-z\d\.-]+)@([a-z\d-]+)\.([a-z]{2,8})(\.[a-z]{2,8})?$/;
+    const emailForm = /^([a-zA-Z0-9._%+-]+)?@[a-zA-Z0-9.-]+\.[a-zA-Z]{2,}$/;
     return !emailForm.test(control.value as string)
       ? { invalidEmail: true }
+      : null;
+  }
+
+  static emptyInput(control: AbstractControl): ValidationErrors | null {
+    const emptyInput = /^$/;
+    return emptyInput.test(control.value as string)
+      ? { emptyInput: true }
       : null;
   }
 }

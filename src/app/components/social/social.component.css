@@ -1,0 +1,32 @@
+.social {
+  border-radius: 20px;
+  display: inline-block;
+}
+
+.social a:hover {
+  cursor: pointer;
+}
+
+.fa {
+  font-size: 1.7rem;
+  color: black;
+  margin-right: 1rem;
+}
+
+.contact-link {
+  text-decoration: none;
+  color: black;
+}
+
+.contact-link:hover {
+  text-decoration: underline;
+  text-decoration-color: rgb(119, 119, 119);
+  text-underline-offset: 5px;
+  cursor: pointer;
+}
+
+@media screen and (min-width: 430px) {
+  .social {
+    font-size: 3rem;
+  }
+}
